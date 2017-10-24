@@ -1,0 +1,94 @@
+// title
+// category
+// subtitle
+// role
+// description
+// images
+// videos
+// links
+
+[
+  {
+    "title": "WINE & SPECIALTY BEVERAGE",
+    "category": "advertising",
+    "subtitle": "Taking the wine industry to the mattresses",
+    "description": "It's one thing to love wine. It's something else to get other people to love it—and buy it. From box-wine to Bordeaux, that's my specialty.",
+    "images": [
+      "https://static1.squarespace.com/static/5705668d356fb046592194d1/t/57ead4a0f5e2316869426244/1475007679988/?format=1500w"
+    ],
+    "links": [
+      {
+        "caption": "Here's my story",
+        "address": "https://joelgunz.journoportfolio.com/"
+      }
+    ]
+  },{
+    "title": "SAGE SOFTWARE",
+    "category": "advertising",
+    "subtitle": "Say hello to tomorrow",
+    "role": "VOICE & TONE, CONCEPTING, COPYWRITING (PITCH DECK)",
+    "description": "It's an occupational hazard: the spark that inspires entrepreneurs to go into business can be squelched by the day-to-day challenges of managing its growth. Sage's digital accounting products make it easy to stay on top of your finances, allowing business owners to get back to doing what they love. We comped up a few stories that said \"goodbye\" to these business headaches and \"hello\" to a smoother, more fulfilling operation.  ",
+    "images": [
+      "https://static1.squarespace.com/static/5705668d356fb046592194d1/570945ccb09f959184db66f8/570947918259b5a98ab84baf/1460225966274/Screen+Shot+2016-03-16+at+10.26.25+PM.png?format=1500w",
+      "https://static1.squarespace.com/static/5705668d356fb046592194d1/570945ccb09f959184db66f8/570945cd5559863dc75d38c1/1460225532754/Screen+Shot+2016-03-16+at+10.26.46+PM.png?format=1500w",
+      "https://static1.squarespace.com/static/5705668d356fb046592194d1/570945ccb09f959184db66f8/5709467aa3360c80a3e57679/1460225693375/sage_goodbye-hello_network_720.jpg?format=1500w"
+    ]
+  },{
+    "title": "BLUEVOLT",
+    "category": "advertising",
+    "subtitle": "Bringing inspiration and innovation to your inbox Knowledge builds",
+    "role": "VOICE & TONE, CONCEPTING, WEBSITE COPY, NURTURE MARKETING, CONTENT CREATION",
+    "description": "In the skilled trades world, the Counter Guys at the distribution center are among the unsung heroes in the manufacturers' sales channel. BlueVolt creates online learning programs that build their knowledge and develop them as the manufacturers' biggest ally. I created a voice and tone that speaks authentically to this world on its desktop, mobile phone, email inbox, trade shows and beyond. Views samples in their natural habitat:",
+    "images": [
+      "https://static1.squarespace.com/static/5705668d356fb046592194d1/t/57093fa007eaa06664e5c72b/1463436583857/?format=1500w"
+    ],
+    "links": [
+      {
+        "caption": "WEBSITE",
+        "address": "https://www.bluevolt.com/"
+      },
+      {
+        "caption": "INFOGRAPHIC",
+        "address": "http://visit.bluevolt.com/ecosystem_infographic"
+      },
+      {
+        "caption": "CASE STUDY",
+        "address": "http://visit.bluevolt.com/wright_tool_customer_story_nn"
+      },
+      {
+        "caption": "REPORT",
+        "address": "http://visit.bluevolt.com/survey_highlights"
+      }
+    ]
+  },{
+    "title": "THIS DAMN HITCHCOCK OBSESSION",
+    "category": "creative",
+    "subtitle": "ALFRED HITCHCOCK IS THE SHAKESPEARE OF THE TWENTIETH CENTURY.",
+    "description": "I've been saying so for years, and now it's starting to catch on with others. I discovered Hitch when I was 12 and by the time I was 17 I was a full-on geek. After all these years, I'm committed. (Or I should be. Rimshot!) Check out the blog that critics say \"pulls together the pieces in a way that provokes one \"aha!\" moment after another.\"",
+    "images": [
+      "https://static1.squarespace.com/static/5705668d356fb046592194d1/t/5706daa94d088e7900c7c2bc/1460073688536/?format=1500w"
+    ],
+    "links": [
+      {
+        "caption": "DROP IN. GEEK OUT.",
+        "address": "http://www.alfredhitchcockgeek.com/"
+      },
+      {
+        "caption": "JOIN THE GEEKS",
+        "address": "https://www.facebook.com/HitchcockGeek/"
+      }
+    ]
+  },{
+    "title": "ACRYLIC",
+    "category": "creative",
+    "images": [
+      "https://static1.squarespace.com/static/5705668d356fb046592194d1/570ffcd1d210b8a7d5675b47/570ffcd28a65e26c89b6dec0/1460665565800/13414122844_f9aceb6e90_o.jpg?format=1500w",
+      "https://static1.squarespace.com/static/5705668d356fb046592194d1/570ffcd1d210b8a7d5675b47/570ffcd2044262ff45f3a287/1460665558566/13413765985_e576db60e1_o.jpg?format=1500w",
+      "https://static1.squarespace.com/static/5705668d356fb046592194d1/570ffcd1d210b8a7d5675b47/570ffcd4044262ff45f3a2b2/1460665573693/13414237584_7d6a6f0555_o.png?format=1500w",
+      "https://static1.squarespace.com/static/5705668d356fb046592194d1/570ffcd1d210b8a7d5675b47/570ffcd78a65e26c89b6dee5/1460665566097/13413982555_1b7d81ae25_o.jpg?format=1500w",
+      "https://static1.squarespace.com/static/5705668d356fb046592194d1/570ffcd1d210b8a7d5675b47/570ffcda8a65e26c89b6df09/1460665569818/13413984315_6595d0574f_o.jpg?format=1500w",
+      "https://static1.squarespace.com/static/5705668d356fb046592194d1/570ffcd1d210b8a7d5675b47/570ffcdc044262ff45f3a2fb/1460665579355/13413736105_bf4f822e17_o.jpg?format=1500w",
+      "https://static1.squarespace.com/static/5705668d356fb046592194d1/570ffcd1d210b8a7d5675b47/570ffcdf8a65e26c89b6df3d/1460665579552/13414193724_342c8dcefd_o.jpg?format=1500w"
+    ]
+  }
+]
