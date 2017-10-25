@@ -13,14 +13,10 @@
   width: 200px;
   border: 1px solid #ce8e40;
   text-align: center;
-  
 }
 
 .toggle {
-  display: inline;
-  border: 1px solid #333;
-  padding: .5rem;
-  margin: .5rem -1px;
+  display: block;
   user-select: none;
 }
 
@@ -29,13 +25,11 @@
 }
 
 .checked {
-  color: white;
-  background-color: #ce8e40;
+  color: #fff;
 }
 
 .unchecked {
-  color: #ce8e40;
-  background-color: #222;
+  color: grey;
 }
 
 .toggle input[type="checkbox"] {
