@@ -1,7 +1,10 @@
 import React from 'react';
+import portfolio from '../data/portfolio.json';
 
-export default function Project(project) {
-  const { title, subtitle, role, description } = project;
+export default function Project({ match }) {
+  const path = match.params.id;
+  const project = portfolio.filter(item => item.path === path);
+  const { title, subtitle, role, description, images, links } = project[0];
   
   return (
     <div>
@@ -9,6 +12,14 @@ export default function Project(project) {
       <h2>{subtitle}</h2>
       <h3>{role}</h3>
       <p>{description}</p>
+      {images
+        ? images.map((image, index) => <img key={index} src={image} alt={`Number ${index}`} />)
+        : null
+      }
+      {links
+        ? links.map((link, index) => <p key={index}><a href={link.address}>{link.caption}</a></p>)
+        : null
+      }
     </div>
   );
 }

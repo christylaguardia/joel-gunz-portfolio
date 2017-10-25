@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "path": "/wine",
+    "path": "wine",
     "title": "WINE & SPECIALTY BEVERAGE",
     "category": "advertising",
     "subtitle": "Taking the wine industry to the mattresses",
@@ -17,7 +17,7 @@
     ]
   },{
     "id": 5,
-    "path": "/sage",
+    "path": "sage",
     "title": "SAGE SOFTWARE",
     "category": "advertising",
     "subtitle": "Say hello to tomorrow",
@@ -30,7 +30,7 @@
     ]
   },{
     "id": 3,
-    "path": "/bluevolt",
+    "path": "bluevolt",
     "title": "BLUEVOLT",
     "category": "advertising",
     "subtitle": "Bringing inspiration and innovation to your inbox Knowledge builds",
@@ -59,7 +59,7 @@
     ]
   },{
     "id": 4,
-    "path": "/hitchcock",
+    "path": "hitchcock",
     "title": "THIS DAMN HITCHCOCK OBSESSION",
     "category": "creative",
     "subtitle": "ALFRED HITCHCOCK IS THE SHAKESPEARE OF THE TWENTIETH CENTURY.",
@@ -79,7 +79,7 @@
     ]
   },{
     "id": 2,
-    "path": "/acrylic",
+    "path": "acrylic",
     "title": "ACRYLIC",
     "category": "creative",
     "images": [
