@@ -1,9 +1,11 @@
 import React from 'react';
 import portfolio from '../data/portfolio.json';
+console.log('portfolio', portfolio);
 
 export default function Project({ match }) {
   const path = match.params.id;
   const project = portfolio.filter(item => item.path === path);
+  console.log('project', project);
   const { title, subtitle, role, description, images, links } = project[0];
   
   return (

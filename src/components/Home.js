@@ -9,6 +9,7 @@ export default class Home extends Component {
     super(props);
 
     this.state = {
+      portfolio: portfolio,
       advertising: true,
       creative: true
     };
@@ -36,14 +37,14 @@ export default class Home extends Component {
 
   getClassName({ category }) {
     if (category === 'advertising') {
-      return this.state.advertising ? 'visible' : 'hidden';
+      return this.state.advertising ? 'project visible' : 'project hidden';
     } else if (category === 'creative') {
-      return this.state.creative ? 'visible' : 'hidden';
+      return this.state.creative ? 'project visible' : 'project hidden';
     }
   }
 
   render() {
-    portfolio.sort((a ,b) => a.id < b.id);
+    this.state.portfolio.sort((a ,b) => a.id < b.id);
 
     return (
       <div>
@@ -63,20 +64,20 @@ export default class Home extends Component {
           Creative
         </label>
 
-        <ul>
-          {portfolio.map(project => {
+        <div id="project-container">
+          {this.state.portfolio.map(project => {
             return (
-              <li
+              <div
                 key={project.id}
                 className={this.getClassName(project)}
               >
                 <Link to={`/${project.path}`}>
                   {project.title}
                 </Link>
-              </li>
+              </div>
             );
           })}
-        </ul>
+        </div>
       </div>
     );
   }

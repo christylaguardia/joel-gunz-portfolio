@@ -1,6 +1,23 @@
 
+#project-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;  
+}
+
+.project {
+  margin: 1rem;
+  padding: 1rem;
+  height: 200px;
+  width: 200px;
+  border: 1px solid #ce8e40;
+  text-align: center;
+  
+}
+
 .toggle {
-  display: inline-block;
+  display: inline;
   border: 1px solid #333;
   padding: .5rem;
   margin: .5rem -1px;
@@ -12,13 +29,13 @@
 }
 
 .checked {
-  color: grey;
-  background-color: yellow
+  color: white;
+  background-color: #ce8e40;
 }
 
 .unchecked {
-  color: yellow;
-  background-color: grey;
+  color: #ce8e40;
+  background-color: #222;
 }
 
 .toggle input[type="checkbox"] {
@@ -27,8 +44,10 @@
 
 .visible {
   visibility: visible;
+  transition: visibility 0s linear 0s, opacity 300ms;  
 }
 
 .hidden {
   visibility: hidden;
+  transition: visibility 0s linear 300ms, opacity 300ms;  
 }

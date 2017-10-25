@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Kameron|Oswald|Raleway');
 
 body {
+  margin: 0 auto;
+  max-width: 940px;
   padding: 1rem;
   color: #fff;
   background-color: #121a1c;
