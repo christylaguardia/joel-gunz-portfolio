@@ -17,7 +17,17 @@ export default function Project({ match }) {
         : null
       }
       {links
-        ? links.map((link, index) => <p key={index}><a href={link.address}>{link.caption}</a></p>)
+        ? <div>{links.map((link, index) => {
+          return (
+            <a key={index}
+              className="button"
+              href={link.address}
+              target="_blank">
+              {link.caption}
+            </a>
+          );
+        })}
+        </div>
         : null
       }
     </div>

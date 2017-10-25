@@ -13,12 +13,10 @@ class App extends Component {
           <ul>
             <li><Link to="/">Joel's Portfolio</Link></li>
             <li><Link to="/about">About</Link></li>
-            <li>Advertising</li>
-            <li>Creative</li>
           </ul>
 
           <hr />
-          
+
           <Switch>
             <Route exact path="/" component={Home}/>
             <Route exact path="/about" component={About}/>
