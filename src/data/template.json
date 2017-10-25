@@ -1,0 +1,28 @@
+// id
+// path
+// title
+// category
+// subtitle
+// role
+// description
+// images
+// videos
+// links
+
+{
+  "id": 0,
+  "path": "",
+  "title": "",
+  "category": "",
+  "subtitle": "",
+  "description": "",
+  "images": [
+    ""
+  ],
+  "links": [
+    {
+      "caption": "",
+      "address": ""
+    }
+  ]
+}

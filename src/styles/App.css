@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css?family=Kameron|Oswald|Raleway');
+
+body {
+  padding: 1rem;
+  color: #fff;
+  background-color: #121a1c;
+  font-family: 'Raleway', sans-serif;
+}
+
+h1 {
+  font-family: 'Kameron', serif;
+  text-transform: uppercase;
+}
+
+h2, p {
+  font-family: 'Raleway', sans-serif;
+}
+
+h3 {
+  font-family: 'Oswald', sans-serif;
+}
+
+img {
+  max-height: 300px;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+ul {
+  padding-left: 0;
+  list-style: none;
+}
+
+.button {
+  display: inline-block;
+  padding: 1rem;
+  margin: 1rem;
+  border: 1px solid #fff;
+  color: #fff;
+  background-color: #121a1c;
+}
+
+.button:hover {
+  color: #121a1c;
+  background-color: #fff;
+}
