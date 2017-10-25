@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import portfolio from '../data/portfolio.json';
 import '../styles/Home.css';
+console.log('portfolio in Home', portfolio);
 
 export default class Home extends Component {
 
@@ -9,6 +10,7 @@ export default class Home extends Component {
     super(props);
 
     this.state = {
+      portfolio: null,
       advertising: true,
       creative: true
     };
@@ -16,6 +18,10 @@ export default class Home extends Component {
     this.toggleAdvertising = this.toggleAdvertising.bind(this);
     this.toggleCreative = this.toggleCreative.bind(this);
     this.getClassName = this.getClassName.bind(this);
+  }
+
+  componentWillMount() {
+    this.setState({ portfolio });
   }
 
   toggleAdvertising() {
@@ -36,14 +42,15 @@ export default class Home extends Component {
 
   getClassName({ category }) {
     if (category === 'advertising') {
-      return this.state.advertising ? 'visible' : 'hidden';
+      return this.state.advertising ? 'project visible' : 'project hidden';
     } else if (category === 'creative') {
-      return this.state.creative ? 'visible' : 'hidden';
+      return this.state.creative ? 'project visible' : 'project hidden';
     }
   }
 
   render() {
-    portfolio.sort((a ,b) => a.id < b.id);
+    console.log('this.state.portfolio in Home render()', this.state.portfolio);
+    this.state.portfolio.sort((a ,b) => a.id < b.id);
 
     return (
       <div>
@@ -63,20 +70,22 @@ export default class Home extends Component {
           Creative
         </label>
 
-        <ul>
-          {portfolio.map(project => {
-            return (
-              <li
-                key={project.id}
-                className={this.getClassName(project)}
-              >
-                <Link to={`/${project.path}`}>
-                  {project.title}
-                </Link>
-              </li>
-            );
-          })}
-        </ul>
+        {this.state.portfolio &&
+          <div id="project-container">
+            {this.state.portfolio.map(project => {
+              return (
+                <div
+                  key={project.id}
+                  className={this.getClassName(project)}
+                >
+                  <Link to={`/${project.path}`}>
+                    {project.title}
+                  </Link>
+                </div>
+              );
+            })}
+          </div>
+        }
       </div>
     );
   }

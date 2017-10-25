@@ -15,7 +15,7 @@
     "eject": "react-scripts eject",
     "deploy": "npm run build&&gh-pages -d build"
   },
-  "homepage": "https://christy-laguardia.github.io/joel-gunz",
+  "homepage": "https://christylaguardia.github.io/joel-gunz",
   "devDependencies": {
     "gh-pages": "^1.0.0"
   }

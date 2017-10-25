@@ -14,9 +14,6 @@ class App extends Component {
             <li><Link to="/">Joel's Portfolio</Link></li>
             <li><Link to="/about">About</Link></li>
           </ul>
-
-          <hr />
-
           <Switch>
             <Route exact path="/" component={Home}/>
             <Route exact path="/about" component={About}/>
