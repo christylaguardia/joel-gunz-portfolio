@@ -10,6 +10,7 @@ export default function Project({ match }) {
   
   return (
     <div>
+      {project ? 'got it' : 'no project'}
       <h1>{title}</h1>
       <h2>{subtitle}</h2>
       <h3>{role}</h3>
