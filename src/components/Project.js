@@ -1,6 +1,5 @@
 import React from 'react';
 import portfolio from '../data/portfolio.json';
-console.log('portfolio in Project', portfolio);
 
 export default function Project({ match }) {
   const path = match.params.id;

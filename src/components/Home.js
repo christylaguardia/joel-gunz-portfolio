@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
+import Tile from './Tile';
 import portfolio from '../data/portfolio.json';
 import '../styles/Home.css';
 console.log('portfolio in Home', portfolio);
@@ -72,20 +73,10 @@ export default class Home extends Component {
 
         {this.state.portfolio &&
           <div id="project-container">
-            {this.state.portfolio.map(project => {
-              return (
-                <div
-                  key={project.id}
-                  className={this.getClassName(project)}
-                >
-                  <Link to={`/${project.path}`}>
-                    {project.title}
-                  </Link>
-                </div>
-              );
-            })}
+            {this.state.portfolio.map(project => <Tile project={project} className={this.getClassName(project)} /> )}
           </div>
         }
+
       </div>
     );
   }
