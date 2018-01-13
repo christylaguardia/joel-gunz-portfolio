@@ -1,11 +1,13 @@
-import React, { Component } from 'react';
+import React from 'react';
 // import { Link } from 'react-router-dom';
 import Tile from './Tile';
+import Cateogry from './Category';
+// import categories from '../data/category.json';
 import portfolio from '../data/portfolio.json';
 import '../styles/Home.css';
 console.log('portfolio in Home', portfolio);
 
-export default class Home extends Component {
+export default class Home extends React.Component {
 
   constructor(props) {
     super(props);
@@ -55,7 +57,9 @@ export default class Home extends Component {
 
     return (
       <div>
-        <label className={this.state.advertising ? 'toggle checked' : 'toggle unchecked'}>
+        <Cateogry />
+
+        {/* <label className={this.state.advertising ? 'toggle checked' : 'toggle unchecked'}>
           <input
             type="checkbox"
             checked={this.state.advertising}
@@ -69,7 +73,7 @@ export default class Home extends Component {
             checked={this.state.creative}
             onChange={() => this.toggleCreative()} />
           Creative
-        </label>
+        </label> */}
 
         {this.state.portfolio &&
           <div id="project-container">

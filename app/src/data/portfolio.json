@@ -3,7 +3,7 @@
     "id": 1,
     "path": "wine",
     "title": "WINE & SPECIALTY BEVERAGE",
-    "category": "advertising",
+    "category_id": 1,
     "subtitle": "Taking the wine industry to the mattresses",
     "description": "It's one thing to love wine. It's something else to get other people to love it—and buy it. From box-wine to Bordeaux, that's my specialty.",
     "images": [
@@ -19,7 +19,7 @@
     "id": 5,
     "path": "sage",
     "title": "SAGE SOFTWARE",
-    "category": "advertising",
+    "category_id": 1,
     "subtitle": "Say hello to tomorrow",
     "role": "VOICE & TONE, CONCEPTING, COPYWRITING (PITCH DECK)",
     "description": "It's an occupational hazard: the spark that inspires entrepreneurs to go into business can be squelched by the day-to-day challenges of managing its growth. Sage's digital accounting products make it easy to stay on top of your finances, allowing business owners to get back to doing what they love. We comped up a few stories that said \"goodbye\" to these business headaches and \"hello\" to a smoother, more fulfilling operation.  ",
@@ -32,7 +32,7 @@
     "id": 3,
     "path": "bluevolt",
     "title": "BLUEVOLT",
-    "category": "advertising",
+    "category_id": 1,
     "subtitle": "Bringing inspiration and innovation to your inbox Knowledge builds",
     "role": "VOICE & TONE, CONCEPTING, WEBSITE COPY, NURTURE MARKETING, CONTENT CREATION",
     "description": "In the skilled trades world, the Counter Guys at the distribution center are among the unsung heroes in the manufacturers' sales channel. BlueVolt creates online learning programs that build their knowledge and develop them as the manufacturers' biggest ally. I created a voice and tone that speaks authentically to this world on its desktop, mobile phone, email inbox, trade shows and beyond. Views samples in their natural habitat:",
@@ -61,7 +61,7 @@
     "id": 4,
     "path": "hitchcock",
     "title": "THIS DAMN HITCHCOCK OBSESSION",
-    "category": "creative",
+    "category_id": 2,
     "subtitle": "ALFRED HITCHCOCK IS THE SHAKESPEARE OF THE TWENTIETH CENTURY.",
     "description": "I've been saying so for years, and now it's starting to catch on with others. I discovered Hitch when I was 12 and by the time I was 17 I was a full-on geek. After all these years, I'm committed. (Or I should be. Rimshot!) Check out the blog that critics say \"pulls together the pieces in a way that provokes one \"aha!\" moment after another.\"",
     "images": [
@@ -81,7 +81,7 @@
     "id": 2,
     "path": "acrylic",
     "title": "ACRYLIC",
-    "category": "creative",
+    "category_id": 2,
     "images": [
       "https://static1.squarespace.com/static/5705668d356fb046592194d1/570ffcd1d210b8a7d5675b47/570ffcd28a65e26c89b6dec0/1460665565800/13414122844_f9aceb6e90_o.jpg?format=1500w",
       "https://static1.squarespace.com/static/5705668d356fb046592194d1/570ffcd1d210b8a7d5675b47/570ffcd2044262ff45f3a287/1460665558566/13413765985_e576db60e1_o.jpg?format=1500w",
@@ -95,14 +95,14 @@
     "id": 6,
     "path": "lorem",
     "title": "Lorem",
-    "category": "creative",
+    "category_id": 2,
     "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     "description": "Quisque maximus justo in imperdiet sagittis. Donec vel convallis ligula. Proin vel faucibus odio, in dapibus urna. Nullam eleifend dolor purus. Donec ex nibh, consectetur et ultrices eget, aliquet in libero. Ut sem nulla, pellentesque eget suscipit efficitur, pharetra non ligula. Praesent fermentum accumsan nunc, nec rutrum leo euismod ut. Nunc tincidunt tempus dolor, vitae aliquet erat rutrum eu. Donec semper justo vel viverra vestibulum. Pellentesque lobortis dolor non suscipit eleifend. Donec viverra vehicula eros vitae porttitor. Duis condimentum venenatis varius. Vivamus vehicula accumsan ante, ut congue odio suscipit sed. In tempor ornare lacus, et porta erat. Sed eget felis dignissim, lobortis augue vel, feugiat massa. Cras sit amet mattis enim."
   },{
     "id": 7,
     "path": "ipsum",
     "title": "Ipsum",
-    "category": "advertising",
+    "category_id": 1,
     "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     "description": "Quisque maximus justo in imperdiet sagittis. Donec vel convallis ligula. Proin vel faucibus odio, in dapibus urna. Nullam eleifend dolor purus. Donec ex nibh, consectetur et ultrices eget, aliquet in libero. Ut sem nulla, pellentesque eget suscipit efficitur, pharetra non ligula. Praesent fermentum accumsan nunc, nec rutrum leo euismod ut. Nunc tincidunt tempus dolor, vitae aliquet erat rutrum eu. Donec semper justo vel viverra vestibulum. Pellentesque lobortis dolor non suscipit eleifend. Donec viverra vehicula eros vitae porttitor. Duis condimentum venenatis varius. Vivamus vehicula accumsan ante, ut congue odio suscipit sed. In tempor ornare lacus, et porta erat. Sed eget felis dignissim, lobortis augue vel, feugiat massa. Cras sit amet mattis enim."
   },{
