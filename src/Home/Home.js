@@ -1,11 +1,7 @@
 import React from 'react';
-// import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import Tile from './Tile';
-import Cateogry from './Category';
-// import categories from '../data/category.json';
-import portfolio from '../data/portfolio.json';
-import '../styles/Home.css';
-console.log('portfolio in Home', portfolio);
+import './Home.css';
 
 export default class Home extends React.Component {
 
@@ -13,7 +9,7 @@ export default class Home extends React.Component {
     super(props);
 
     this.state = {
-      portfolio: null,
+      projects: null,
       advertising: true,
       creative: true
     };
@@ -24,7 +20,7 @@ export default class Home extends React.Component {
   }
 
   componentWillMount() {
-    this.setState({ portfolio });
+    this.setState({ projects: this.props.projects });
   }
 
   toggleAdvertising() {
@@ -52,12 +48,11 @@ export default class Home extends React.Component {
   }
 
   render() {
-    console.log('this.state.portfolio in Home render()', this.state.portfolio);
-    this.state.portfolio.sort((a ,b) => a.id < b.id);
+    // console.log('this.state.projects in Home render()', this.state.projects);
+    this.state.projects.sort((a, b) => a.sequence < b.sequence);
 
     return (
       <div>
-        <Cateogry />
 
         {/* <label className={this.state.advertising ? 'toggle checked' : 'toggle unchecked'}>
           <input
@@ -75,9 +70,9 @@ export default class Home extends React.Component {
           Creative
         </label> */}
 
-        {this.state.portfolio &&
+        {this.state.projects &&
           <div id="project-container">
-            {this.state.portfolio.map(project => <Tile project={project} className={this.getClassName(project)} /> )}
+            {this.state.projects.map(project => <Tile project={project} className={this.getClassName(project)} /> )}
           </div>
         }
 
