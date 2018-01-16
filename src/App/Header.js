@@ -1,29 +1,13 @@
 import React from 'react';
-import { BrowserRouter as Router, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
-function Categories({ categories }) {
-  let toggleClass = 'toggle unchecked';
-
+function Categories() {
   return (
-    <Router>
-      <div>
-        <Link to="/">Joel's Portfolio</Link>
-        <Link to="/about">About</Link>
-      
-        {categories.map((category, item) => {
-          return (
-            <label key={item} className={toggleClass}>
-              <input
-                type="checkbox"
-                // checked={this.state.advertising}
-                onChange={() => this.toggleCategory()} />
-              {category.category}
-            </label>
-          );
-        })}
-
-      </div>
-    </Router>
+    <div>
+      <p><Link to="/">Joel Gunz</Link></p>
+      <p><Link to="/about">About</Link></p>
+      <p><Link to="/login">Login</Link></p>
+    </div>
   );
 }
 

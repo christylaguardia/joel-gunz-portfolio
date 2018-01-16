@@ -4,7 +4,6 @@
       "sequence": 1,
       "category": "Advertising",
       "title": "Wine & Specialty Beverage",
-      "subtitle": "Taking the wine industry to the mattresses",
       "image": "https://static1.squarespace.com/static/5705668d356fb046592194d1/t/57ead4a0f5e2316869426244/1475007679988/?format=1500w",
       "body": "It's one thing to love wine. It's something else to get other people to love it—and buy it. From box-wine to Bordeaux, that's my specialty."
     },
@@ -12,7 +11,6 @@
       "sequence": 2,
       "category": "Advertising",
       "title": "SAGE SOFTWARE",
-      "subtitle": "Say hello to tomorrow",
       "image": "https://static1.squarespace.com/static/5705668d356fb046592194d1/570945ccb09f959184db66f8/570947918259b5a98ab84baf/1460225966274/Screen+Shot+2016-03-16+at+10.26.25+PM.png?format=1500w",
       "body": "It's an occupational hazard: the spark that inspires entrepreneurs to go into business can be squelched by the day-to-day challenges of managing its growth. Sage's digital accounting products make it easy to stay on top of your finances, allowing business owners to get back to doing what they love. We comped up a few stories that said \"goodbye\" to these business headaches and \"hello\" to a smoother, more fulfilling operation."
     },
@@ -20,7 +18,6 @@
       "sequence": 3,
       "category": "Advertising",
       "title": "Bluevolt",
-      "subtitle": "Bringing inspiration and innovation to your inbox Knowledge builds",
       "image": "https://static1.squarespace.com/static/5705668d356fb046592194d1/t/57093fa007eaa06664e5c72b/1463436583857/?format=1500w",
       "body": "In the skilled trades world, the Counter Guys at the distribution center are among the unsung heroes in the manufacturers' sales channel. BlueVolt creates online learning programs that build their knowledge and develop them as the manufacturers' biggest ally. I created a voice and tone that speaks authentically to this world on its desktop, mobile phone, email inbox, trade shows and beyond. Views samples in their natural habitat:"
     },
@@ -28,7 +25,6 @@
       "sequence": 4,
       "category": "Creative",
       "title": "THIS DAMN HITCHCOCK OBSESSION",
-      "subtitle": "ALFRED HITCHCOCK IS THE SHAKESPEARE OF THE TWENTIETH CENTURY.",
       "images": "https://static1.squarespace.com/static/5705668d356fb046592194d1/t/5706daa94d088e7900c7c2bc/1460073688536/?format=1500w",
       "url": "http://www.alfredhitchcockgeek.com/"
     },
@@ -36,14 +32,12 @@
       "sequence": 5,
       "category": "Creative",
       "title": "Lorem",
-      "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
       "body": "Quisque maximus justo in imperdiet sagittis. Donec vel convallis ligula. Proin vel faucibus odio, in dapibus urna. Nullam eleifend dolor purus. Donec ex nibh, consectetur et ultrices eget, aliquet in libero. Ut sem nulla, pellentesque eget suscipit efficitur, pharetra non ligula. Praesent fermentum accumsan nunc, nec rutrum leo euismod ut. Nunc tincidunt tempus dolor, vitae aliquet erat rutrum eu. Donec semper justo vel viverra vestibulum. Pellentesque lobortis dolor non suscipit eleifend. Donec viverra vehicula eros vitae porttitor. Duis condimentum venenatis varius. Vivamus vehicula accumsan ante, ut congue odio suscipit sed. In tempor ornare lacus, et porta erat. Sed eget felis dignissim, lobortis augue vel, feugiat massa. Cras sit amet mattis enim."
     },
     "ipsum": {
       "sequence": 6,
       "category": "Advertising",
       "title": "Ipsum",
-      "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
       "body": "Quisque maximus justo in imperdiet sagittis. Donec vel convallis ligula. Proin vel faucibus odio, in dapibus urna. Nullam eleifend dolor purus. Donec ex nibh, consectetur et ultrices eget, aliquet in libero. Ut sem nulla, pellentesque eget suscipit efficitur, pharetra non ligula. Praesent fermentum accumsan nunc, nec rutrum leo euismod ut. Nunc tincidunt tempus dolor, vitae aliquet erat rutrum eu. Donec semper justo vel viverra vestibulum. Pellentesque lobortis dolor non suscipit eleifend. Donec viverra vehicula eros vitae porttitor. Duis condimentum venenatis varius. Vivamus vehicula accumsan ante, ut congue odio suscipit sed. In tempor ornare lacus, et porta erat. Sed eget felis dignissim, lobortis augue vel, feugiat massa. Cras sit amet mattis enim."
     }
 }
