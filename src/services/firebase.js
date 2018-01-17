@@ -11,9 +11,15 @@ const config = {
 
 firebase.initializeApp(config);
 
-export const provider = new firebase.auth.GoogleAuthProvider();
-export const auth = firebase.auth();
+console.log('firebase app initialized', firebase.app().name); 
 
-export const projectsRef = firebase.database().ref('projects');
+export const provider = new firebase.auth.GoogleAuthProvider();
+
+export const auth = firebase.auth();
+export const pagesRef = firebase.database().ref('projects');
+
+export function getPages() {
+  return pagesRef.on('value', (snapshot) => snapshot.val());
+}
 
 export default firebase;

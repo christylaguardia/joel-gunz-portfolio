@@ -1,6 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Link, Route } from 'react-router-dom';
-import Page from './Page';
+import { Link } from 'react-router-dom';
 
 function Menu({ projects }) {
   projects.sort((a, b) => a.sequence > b.sequence);
