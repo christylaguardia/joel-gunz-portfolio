@@ -1,15 +1,15 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
-// import { fetchPages } from './actions';
+import { fetchPages } from './actions';
 import Header from './Header';
 import Menu from '../menu/Menu';
 import Login from '../auth/Login';
-import { getPages } from '../services/firebase';
+
 class App extends Component {
 
   componentDidMount() {
-    getPages();
+    this.props.fetchPages();
   }
 
   render() {
@@ -21,8 +21,7 @@ class App extends Component {
             : (
               <div>
                 <Header />
-                {/* <Route exact path="/" render={() => <Menu projects={this.props.pages} />} /> */}
-                <Route exact path="/" render={() => <div>{this.props.pages} </div>} />
+                <Route exact path="/" component={Menu} />
                 <Route path="/login" component={Login} />
               </div>
             )
@@ -35,5 +34,5 @@ class App extends Component {
 
 export default connect(
   state => ({ loading: state.loading }),
-  null //{ fetchPages }
+  { fetchPages }
 )(App);
