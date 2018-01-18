@@ -12,7 +12,7 @@ const store = createStore(
   composeEnhancers(
     applyMiddleware(
       thunk,
-      // promiseMiddleware,
+      promiseMiddleware,
       logger
     )
   )

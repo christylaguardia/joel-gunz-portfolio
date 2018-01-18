@@ -52,7 +52,7 @@ export default ({ dispatch }) => next => async action => {
   }
   catch (err) {
     // dispatch(createNotification('ERROR', err));
-    // throw err;
     console.log(err);
+    throw err;
   }
 };

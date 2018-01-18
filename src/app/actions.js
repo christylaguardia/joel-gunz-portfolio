@@ -1,10 +1,13 @@
-import { FETCHED_PAGES } from './reducers';
-import { pagesRef } from '../services/firebase';
+import { FETCHED_PAGES, LOADING } from './reducers';
+import { getPages } from '../services/firebase';
 
-const pagesData = pagesRef.on('value', (snapshot) => snapshot.val());
-console.log('pagesData', pagesData);
+// TODO: this is not working
+// export const fetchPages = () => dispatch => dispatch({
+//   type: FETCHED_PAGES,
+//   payload: getPages().then(pages => pages)
+// });
 
-export const fetchPages = () => dispatch => dispatch({
+export const fetchPages = (pages) => dispatch => dispatch({
   type: FETCHED_PAGES,
-  payload: pagesData
+  payload: pages
 });
