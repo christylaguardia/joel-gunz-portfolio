@@ -3,11 +3,6 @@ import { firebaseUrl } from '../services/firebase';
 
 import { FIREBASE_CONFIG, FIREBASE_REF } from './reducers';
 
-export const setFirebaseRef = () => ({
-  type: FIREBASE_REF,
-  payload: firebaseUrl
-});
-
 const replaceConfig = config => ({
   type: FIREBASE_CONFIG,
   payload: config
