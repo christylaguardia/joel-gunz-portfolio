@@ -6,12 +6,14 @@ class Menu extends React.Component {
 
   render() {
     const { pages } = this.props;
-    pages.sort((a, b) => a.sequence > b.sequence);
-    console.log('pages', pages);
+    console.log('pages in Menu', pages);
+    const keys = Object.keys(pages);
+    const pagesArray = keys.map(k => pages[k]);
+    // pages.sort((a, b) => a.sequence > b.sequence);
     
     return (
       <div>
-        {pages.map(p => p.url
+        {pagesArray.map(p => p.url
           ? <p key={p.sequence}><a href={p.url} target="_blank">{p.title}</a></p>
           : <p key={p.sequence}><Link to={`/${p.path}`}>{p.title}</Link></p>
         )}

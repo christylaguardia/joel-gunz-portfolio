@@ -1,8 +1,13 @@
+@import url('https://fonts.googleapis.com/css?family=Martel');
 
 body {
   margin: 0 auto;
   padding: 1rem;
-  font-family: serif;
+  font-family: 'Martel', 'Times New Roman', Times, serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: Helvetica, Arial, sans-serif;
 }
 
 ul {

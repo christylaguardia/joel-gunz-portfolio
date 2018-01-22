@@ -1,7 +1,8 @@
 import { combineReducers } from 'redux';
-import { pages, loading } from '../app/reducers';
+import { firebase, pages, loading } from '../app/reducers';
 
 export default combineReducers({
+  firebase, 
   pages,
   loading
 });
