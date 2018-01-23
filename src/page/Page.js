@@ -1,14 +1,22 @@
 import React from 'react';
+import { connect } from 'react-redux';
 
-function Page(html) {
-  // console.log('props in Project', props);
-  // console.log('project in Project', project);
-  // const path = props.match.params.name;
-  // const project = projects.filter(item => item.path === path);
-  
-  return (
-    <div>{html}</div>
-  );
+class Page extends React.Component {
+
+  render() {
+    const path = this.props.match.params.name;
+    const current = this.props.pages[path];
+
+    return (
+      <div>
+        <h1>{current.title}</h1>
+        <div>{current.body}</div>
+      </div>
+    );
+  }
 }
 
-export default Page;
+export default connect(
+  ({ pages }) => ({ pages }),
+  null
+)(Page);

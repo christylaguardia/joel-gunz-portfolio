@@ -4,24 +4,6 @@ export const FETCHED_PAGES = 'FETCHED_PAGES';
 export const LOADING = 'LOADING';
 export const LOADED = 'LOADED';
 
-// export const firebaseConfig = (state = '', { type, payload }) => {
-//   switch (type) {
-//     case FIREBASE_CONFIG:
-//       return payload; //Object.assign({}, payload.value);
-//     default:
-//       return state; 
-//   }
-// };
-
-export const firebase = (state = {}, { type, payload }) => {
-  switch (type) {
-    case FIREBASE_REF:
-      return { ...state, ref: payload };
-    default:
-      return state;
-  }
-};
-
 export const pages = (state = {}, { type, payload }) => {
   switch (type) {
     case FETCHED_PAGES:
@@ -34,7 +16,7 @@ export const pages = (state = {}, { type, payload }) => {
 export const categories = (state = [], { type, payload }) => {
   switch (type) {
     case FETCHED_PAGES:
-      return payload,categories;
+      return payload;
     default:
       return state;
   }
