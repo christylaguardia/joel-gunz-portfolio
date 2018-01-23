@@ -12,7 +12,17 @@ import Page from '../page/Page';
 class App extends Component {
 
   componentDidMount() {
-    pagesRef.on('value', snapshot => this.props.fetchData(snapshot.val()));
+    pagesRef.on('value', snapshot => {
+      const rawData = snapshot.val();
+      const keys = Object.keys(rawData);
+      const pagesArray = keys.map(k => {
+        let page = rawData[k];
+        page.path = k;
+        return page;
+      });
+      pagesArray.sort((a, b) => a.sequence > b.sequence);
+      this.props.fetchData(pagesArray);
+    });
   }
 
   render() {
@@ -26,7 +36,7 @@ class App extends Component {
                 <Header />
                 <Route exact path="/" component={Menu} />
                 <Route path="/login" component={Login} />
-                <Route path="/p/:name" component={Page} />
+                {this.props.pages.map(p => <Route path={`/${p.path}`} render={() => <Page page={p} />} /> )}
               </div>)
           }
         </div>
@@ -36,6 +46,6 @@ class App extends Component {
 }
 
 export default connect(
-  ({ loading }) => ({ loading }),
+  ({ loading, pages }) => ({ loading, pages }),
   { fetchData }
 )(App);

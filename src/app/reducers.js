@@ -4,7 +4,7 @@ export const FETCHED_PAGES = 'FETCHED_PAGES';
 export const LOADING = 'LOADING';
 export const LOADED = 'LOADED';
 
-export const pages = (state = {}, { type, payload }) => {
+export const pages = (state = [], { type, payload }) => {
   switch (type) {
     case FETCHED_PAGES:
       return payload;
