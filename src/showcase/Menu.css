@@ -1,0 +1,17 @@
+
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-flow: row wrap;
+  flex-wrap: wrap;
+}
+
+.tile {
+  /* display: inline-block; */
+  margin: 2rem;
+  padding: 1rem;
+  height: 200px;
+  width: 200px;
+  border: 1px solid #ce8e40;
+  text-align: center;
+}
