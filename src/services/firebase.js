@@ -9,8 +9,8 @@ const config = {
   messagingSenderId: process.env.REACT_APP_SENDER_ID
 };
 
-firebase.initializeApp(config);
+const firebaseApp = firebase.initializeApp(config);
 
-export const provider = new firebase.auth.GoogleAuthProvider();
-export const auth = firebase.auth();
-export const pagesRef = firebase.database().ref('projects');
+export const auth = firebaseApp.auth();
+// export const db = firebaseApp.database();
+export const pagesRef = firebaseApp.database().ref('pages');

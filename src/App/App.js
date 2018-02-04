@@ -1,44 +1,27 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { BrowserRouter as Router, Switch, Route, Redirect } from 'react-router-dom';
-import { pagesRef } from '../services/firebase';
+import { BrowserRouter as Router} from 'react-router-dom';
 import { fetchData } from './actions';
 import Header from './Header';
-import Menu from '../menu/Menu';
-import Login from '../auth/Login';
-import Page from '../page/Page';
-
+import Routes from './Routes';
 
 class App extends Component {
 
-  componentDidMount() {
-    pagesRef.on('value', snapshot => {
-      const rawData = snapshot.val();
-      const keys = Object.keys(rawData);
-      const pagesArray = keys.map(k => {
-        let page = rawData[k];
-        page.path = k;
-        return page;
-      });
-      pagesArray.sort((a, b) => a.sequence > b.sequence);
-      this.props.fetchData(pagesArray);
-    });
+  componentWillMount() {
+    this.props.fetchData();
   }
 
   render() {
     return (
       <Router>
         <div>
-          {this.props.loading
-            ? <p>Loading...</p>
-            : (
-              <div>
-                <Header />
-                <Route exact path="/" component={Menu} />
-                <Route path="/login" component={Login} />
-                {this.props.pages.map(p => <Route path={`/${p.path}`} render={() => <Page page={p} />} /> )}
-              </div>)
-          }
+          <header>
+            <Header />
+            {this.props.loading && <p>Loading...</p>}
+          </header>
+          <main>
+            {this.props.gotData && <Routes /> }
+          </main>
         </div>
       </Router>
     );
@@ -46,6 +29,9 @@ class App extends Component {
 }
 
 export default connect(
-  ({ loading, pages }) => ({ loading, pages }),
+  state => ({
+    gotData: !!state.data.pages,
+    loading: state.loading
+  }),
   { fetchData }
 )(App);
