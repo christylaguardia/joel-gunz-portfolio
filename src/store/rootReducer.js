@@ -1,7 +1,9 @@
 import { combineReducers } from 'redux';
-import { pages, loading } from '../app/reducers';
+import { loading, error, data, user } from '../app/reducers';
 
 export default combineReducers({
-  pages,
-  loading
+  loading,
+  error,
+  data,
+  user
 });
