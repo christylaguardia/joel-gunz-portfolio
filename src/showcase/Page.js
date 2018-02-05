@@ -7,10 +7,10 @@ class Page extends React.PureComponent {
     const { title, content } = this.props.page;
 
     return (
-      <div>
+      <section>
         <h1>{title}</h1>
         <div>{content}</div>
-      </div>
+      </section>
     );
   }
 }

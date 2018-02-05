@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { BrowserRouter as Router} from 'react-router-dom';
+import { BrowserRouter as Router, Link } from 'react-router-dom';
 import { fetchData } from './actions';
 import Header from './Header';
 import Routes from './Routes';
@@ -19,11 +19,14 @@ class App extends Component {
         <div>
           <header>
             <Header />
-            {loading && <p>Loading...</p>}
           </header>
           <main>
+            {loading && <div className="loader"></div>}
             {dataLoaded && <Routes /> }
           </main>
+          <footer>
+            {!loading && <Link to="/login">Login</Link>}
+          </footer>
         </div>
       </Router>
     );

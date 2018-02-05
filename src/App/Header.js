@@ -5,9 +5,9 @@ import { Link } from 'react-router-dom';
 const Header = ({ categories }) => {
   console.log('categories in header', categories);
   return (
-    <ul>
-      <li><Link to="/">Joel Gunz</Link></li>
-      <li><Link to="/about">About</Link></li>
+    <nav>
+      <Link to="/">Joel Gunz</Link>
+      <Link className="right" to="/about">About</Link>
       {/* {categories && categories.map((c, i) => {
         return (
           <li key={i}>
@@ -15,7 +15,7 @@ const Header = ({ categories }) => {
           </li>
         );
       })} */}
-    </ul>
+    </nav>
   );
 };
 

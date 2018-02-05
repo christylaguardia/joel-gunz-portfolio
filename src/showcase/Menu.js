@@ -6,7 +6,7 @@ import './Menu.css';
 const InstagramTile = ({ page, data }) => (
   <a className="tile"
     href={data.url}
-    target="_blank">
+    target="_blank" >
     <img src={data.image_url}
       alt="Instagram"
       height="180px"
@@ -17,7 +17,7 @@ const InstagramTile = ({ page, data }) => (
 const FeedTile = ({ page, data }) => (
   <a className="tile"
     href={data.url}
-    target="_blank">
+    target="_blank" >
     <p>{page.feed}</p>
     <p>{data.content}</p>
     <p>{data.date}</p>
@@ -66,14 +66,14 @@ class Menu extends React.PureComponent {
     
 
     return (
-      <div className="container">
+      <section className="container">
         {pages.map((page, i) => page.path
           ? <LinkTile key={i} page={page} />
           : page.feed === 'instagram'
             ? <InstagramTile key={i} page={page} data={feeds[page.feed]}/>
             : <FeedTile key={i} page={page} data={feeds[page.feed]}/>
         )}
-      </div>
+      </section>
     );
   }
 }

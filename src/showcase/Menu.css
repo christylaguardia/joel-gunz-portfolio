@@ -4,15 +4,21 @@
   flex-direction: row;
   flex-flow: row wrap;
   flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 .tile {
-  /* display: inline-block; */
-  margin: 2rem;
-  padding: 1rem;
-  height: 200px;
-  width: 200px;
-  border: 1px solid #ce8e40;
+  /* margin: 1rem; */
+  margin: 10px;
+  height: 280px;
+  width: 280px;
+  border-radius: 3px;
   text-align: center;
   overflow: scroll;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
+
+.tile:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
