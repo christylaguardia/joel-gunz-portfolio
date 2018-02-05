@@ -8,19 +8,21 @@ import Routes from './Routes';
 class App extends Component {
 
   componentWillMount() {
-    this.props.fetchData();
+    if (!this.props.dataLoaded.pages) this.props.fetchData();
   }
 
   render() {
+    const { dataLoaded, loading } = this.props;
+
     return (
       <Router>
         <div>
           <header>
             <Header />
-            {this.props.loading && <p>Loading...</p>}
+            {loading && <p>Loading...</p>}
           </header>
           <main>
-            {this.props.gotData && <Routes /> }
+            {dataLoaded && <Routes /> }
           </main>
         </div>
       </Router>
@@ -28,9 +30,9 @@ class App extends Component {
   }
 }
 
-export default connect(
+export default connect(    
   state => ({
-    gotData: !!state.data.pages,
+    dataLoaded: !!state.data,
     loading: state.loading
   }),
   { fetchData }

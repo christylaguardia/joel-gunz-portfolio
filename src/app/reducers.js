@@ -34,12 +34,12 @@ export const data = (state = {}, { type, payload }) => {
   }
 };
 
-export const user = (state = {}, { type, payload }) => {
+export const token = (state = {}, { type, payload }) => {
   switch (type) {
     case LOGIN:
       return payload;
     case LOGOUT:
-      return undefined;    
+      return null;    
     default:
       return state;
   }

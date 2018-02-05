@@ -1,0 +1,56 @@
+{
+  "feeds" : {
+    "blogger" : {
+      "content" : "6 (blogger post)",
+      "date" : "Mon, 05 Feb 2018 02:40:00 +0000",
+      "url" : "http://hesnotmydad.christylaguardia.com/2018/02/6-blogger-post.html"
+    },
+    "facebook" : {
+      "content" : "hello world!",
+      "date" : "2018-02-05T01:16:42+0000"
+    },
+    "instagram" : {
+      "content" : "Doing religion right at the church of Darcelle XV, 87 years outrageous. You walk in looking for a naughty giggle and walk out inspired to show the world who you really are, lumps and all. Thank you lovely ladies! Some of the men in the group shot—no  exaggeration—saved my life as we got together each week to share our pain and struggles.  Alchemists of the highest order, we turned our shit into platinum, and I wouldn’t be where I am without them. Much gratitude. Happy 60th, Dan! #SomeHeroesRockFalseEyelashesAndAWig",
+      "date" : "1517081282",
+      "image_url" : "https://scontent.cdninstagram.com/vp/26262bfffeb81f445fdd8c467942f9ce/5B15D8B9/t51.2885-15/s640x640/sh0.08/e35/26869521_193675147881006_1114680064991035392_n.jpg",
+      "url" : "https://www.instagram.com/p/BedvJc3Ht3E/"
+    },
+    "medium" : {
+      "content" : "Great piece!",
+      "date" : "Thu, 18 Jan 2018 20:49:53 GMT",
+      "url" : "https://medium.com/@joelgunz/great-piece-31ea2fdbd785?source=rss-27b048686bee------2"
+    },
+    "twitter" : {
+      "content" : "Double-You-Tee-Eff?!?!?! https://t.co/EspTPABG8I",
+      "date" : "Sat Feb 03 10:12:35 +0000 2018"
+    }
+  },
+  "pages" : {
+    "bluevolt" : {
+      "category" : "advertising",
+      "content" : "In the skilled trades world, the Counter Guys at the distribution center are among the unsung heroes in the manufacturers' sales channel. BlueVolt creates online learning programs that build their knowledge and develop them as the manufacturers' biggest ally. I created a voice and tone that speaks authentically to this world on its desktop, mobile phone, email inbox, trade shows and beyond. Views samples in their natural habitat:",
+      "title" : "Bluevolt"
+    },
+    "ipsum" : {
+      "category" : "advertising",
+      "content" : "Quisque maximus justo in imperdiet sagittis. Donec vel convallis ligula. Proin vel faucibus odio, in dapibus urna. Nullam eleifend dolor purus. Donec ex nibh, consectetur et ultrices eget, aliquet in libero. Ut sem nulla, pellentesque eget suscipit efficitur, pharetra non ligula. Praesent fermentum accumsan nunc, nec rutrum leo euismod ut. Nunc tincidunt tempus dolor, vitae aliquet erat rutrum eu. Donec semper justo vel viverra vestibulum. Pellentesque lobortis dolor non suscipit eleifend. Donec viverra vehicula eros vitae porttitor. Duis condimentum venenatis varius. Vivamus vehicula accumsan ante, ut congue odio suscipit sed. In tempor ornare lacus, et porta erat. Sed eget felis dignissim, lobortis augue vel, feugiat massa. Cras sit amet mattis enim.",
+      "title" : "Ipsum"
+    },
+    "kevin" : {
+      "category" : "creative",
+      "content" : "Bacon ipsum dolor amet filet mignon pork chop short loin, frankfurter doner drumstick kielbasa biltong sirloin flank porchetta. Salami ham chuck, jerky short ribs prosciutto tenderloin drumstick capicola leberkas shank. Ham kevin pork loin pig rump salami. Turkey spare ribs capicola flank pork tri-tip filet mignon tenderloin doner kielbasa ham pancetta ground round. Jowl picanha hamburger burgdoggen bresaola t-bone brisket tongue. Tri-tip tongue short ribs, short loin strip steak kielbasa bacon buffalo. Ham hock ham landjaeger corned beef.",
+      "title" : "Kevin Bacon Ipsum"
+    },
+    "lorem" : {
+      "category" : "creative",
+      "content" : "Quisque maximus justo in imperdiet sagittis. Donec vel convallis ligula. Proin vel faucibus odio, in dapibus urna. Nullam eleifend dolor purus. Donec ex nibh, consectetur et ultrices eget, aliquet in libero. Ut sem nulla, pellentesque eget suscipit efficitur, pharetra non ligula. Praesent fermentum accumsan nunc, nec rutrum leo euismod ut. Nunc tincidunt tempus dolor, vitae aliquet erat rutrum eu. Donec semper justo vel viverra vestibulum. Pellentesque lobortis dolor non suscipit eleifend. Donec viverra vehicula eros vitae porttitor. Duis condimentum venenatis varius. Vivamus vehicula accumsan ante, ut congue odio suscipit sed. In tempor ornare lacus, et porta erat. Sed eget felis dignissim, lobortis augue vel, feugiat massa. Cras sit amet mattis enim.",
+      "title" : "Lorem"
+    },
+    "sage" : {
+      "category" : "advertising",
+      "content" : "It's an occupational hazard: the spark that inspires entrepreneurs to go into business can be squelched by the day-to-day challenges of managing its growth. Sage's digital accounting products make it easy to stay on top of your finances, allowing business owners to get back to doing what they love. We comped up a few stories that said \"goodbye\" to these business headaches and \"hello\" to a smoother, more fulfilling operation.",
+      "title" : "SAGE SOFTWARE"
+    }
+  },
+  "tiles" : [ "ipsum", "bluevolt", "kevin", "medium", "lorem", "instagram", "sage", "twitter", "blogger", "facebook" ]
+}

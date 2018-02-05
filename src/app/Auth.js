@@ -1,5 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
+import { Redirect } from 'react-router-dom';
 import { login } from './actions';
 
 class Auth extends React.PureComponent {
@@ -19,6 +20,8 @@ class Auth extends React.PureComponent {
   }
 
   render() {
+    if (this.props.gotToken) return <Redirect to="/admin" />;
+
     return (
       <form
         onSubmit={e => {
@@ -51,6 +54,6 @@ class Auth extends React.PureComponent {
 }
 
 export default connect(
-  null,
+  state => ({ gotToken: !!state.token }),
   { login }
 )(Auth);

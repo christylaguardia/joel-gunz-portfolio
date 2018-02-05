@@ -16,6 +16,6 @@ class Page extends React.PureComponent {
 }
 
 export default connect(
-  (state, ownProps) => ({ page: state.data.pages.filter(p => p.pathname === ownProps.match.params.page)[0] }),
+  (state, ownProps) => ({ page: state.data.pages.filter(p => p.path === ownProps.match.params.page)[0] }),
   null
 )(Page);

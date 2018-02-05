@@ -1,9 +1,20 @@
 import { combineReducers } from 'redux';
-import { loading, error, data, user } from '../app/reducers';
+import { loading, error, data, token } from '../app/reducers';
 
-export default combineReducers({
+const publicReducers = combineReducers({
   loading,
   error,
   data,
-  user
+  token
 });
+
+// const publicReducers = combineReducers({
+
+// });
+
+// const rootReducer = (state, action) => {
+//   if (action.type === LOGOUT) token = null;
+//   return publicReducers(state, action);
+// };
+
+export default publicReducers;

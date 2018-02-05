@@ -1,4 +1,6 @@
 import firebase from 'firebase';
+import store from '../store/store';
+import { LOGOUT } from '../app/reducers';
 
 const config = {
   apiKey: process.env.REACT_APP_API_KEY,
@@ -12,5 +14,10 @@ const config = {
 const firebaseApp = firebase.initializeApp(config);
 
 export const auth = firebaseApp.auth();
-// export const db = firebaseApp.database();
-export const pagesRef = firebaseApp.database().ref('pages');
+export const db = firebaseApp.database();
+export const feedsRef = db.ref('feeds');
+export const pagesRef = db.ref('pages');
+
+auth.onAuthStateChanged(user => {
+  if (!user) store.dispatch({ type: LOGOUT });
+});
