@@ -13,6 +13,7 @@ const IndexPage = ({ data }) => (
       categoryData={data.allContentfulCategory}
       articleData={data.allContentfulArticle}
     />
+    {/* TODO: use a new content type for the home tiles */}
     <Projects data={data.allContentfulProject} />
   </div>
 )
@@ -46,7 +47,6 @@ export const query = graphql`
           assetDisplay
           assets {
             title
-            url
             type
             media {
               file {

@@ -59,8 +59,11 @@ exports.createPages = ({ graphql, actions }) => {
               id
               title
               type
-              url
+              embed {
+                embed
+              }
               media {
+                title
                 file {
                   url
                 }
@@ -70,15 +73,15 @@ exports.createPages = ({ graphql, actions }) => {
         }
       }
     }
-  `).then(result => {
+  `).then(results => {
     // Create article pages
-    result.data.allContentfulArticle.edges.forEach(({ node }) => {
+    results.data.allContentfulArticle.edges.forEach(({ node }) => {
       createPage({
         path: `/${node.slug}`,
         component: path.resolve(`./src/pages/article.js`),
         context: {
-          categories: result.data.allContentfulCategory, // for the nav bar
-          articles: result.data.allContentfulArticle, // for the nav bar
+          categories: results.data.allContentfulCategory, // for the nav bar
+          articles: results.data.allContentfulArticle, // for the nav bar
           id: node.id,
           title: node.title,
           slug: node.slug,
@@ -87,13 +90,13 @@ exports.createPages = ({ graphql, actions }) => {
       })
     })
     // Create project pages
-    result.data.allContentfulProject.edges.forEach(({ node }) => {
+    results.data.allContentfulProject.edges.forEach(({ node }) => {
       createPage({
         path: `/${node.slug}`,
         component: path.resolve(`./src/pages/project.js`),
         context: {
-          categories: result.data.allContentfulCategory, // for the nav bar
-          articles: result.data.allContentfulArticle, // for the nav bar
+          categories: results.data.allContentfulCategory, // for the nav bar
+          articles: results.data.allContentfulArticle, // for the nav bar
           id: node.id,
           projectName: node.projectName,
           description: node.description,
