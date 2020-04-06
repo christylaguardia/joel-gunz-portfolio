@@ -6,27 +6,29 @@ import Col from "react-bootstrap/Col"
 import Card from "react-bootstrap/Card"
 import "./projects.css"
 
-export const Projects = ({ data }) => (
-  <Container fluid className="container">
-    <Row>
-      {data &&
-        data.edges.map(({ node }) => (
-          <Col key={node.id}>
-            <Link to={`/${node.slug}`}>
-              <Card className="bg-dark text-white">
-                {node.media && (
-                  <Card.Img
-                    src={node.media[0].file.url}
-                    alt={node.media[0].title}
-                  />
-                )}
-                <Card.ImgOverlay>
-                  <Card.Title>{node.projectName}</Card.Title>
-                </Card.ImgOverlay>
-              </Card>
-            </Link>
-          </Col>
-        ))}
-    </Row>
-  </Container>
-)
+export const Projects = ({ data }) => {
+  return (
+    <Container fluid className="container">
+      <Row>
+        {data &&
+          data.edges.map(({ node }) => {
+            const asset = node.assets.find(asset => asset.type !== "video") // skipping videos for now
+            const assetSrc = asset.url || asset.media.file.url
+
+            return (
+              <Col key={node.id}>
+                <Link to={`/${node.slug}`}>
+                  <Card className="bg-dark text-white">
+                    {asset && <Card.Img src={assetSrc} alt={asset?.title} />}
+                    <Card.ImgOverlay>
+                      <Card.Title>{node.projectName}</Card.Title>
+                    </Card.ImgOverlay>
+                  </Card>
+                </Link>
+              </Col>
+            )
+          })}
+      </Row>
+    </Container>
+  )
+}

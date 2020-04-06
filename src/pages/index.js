@@ -43,16 +43,16 @@ export const query = graphql`
           id
           projectName
           slug
-          media {
+          assetDisplay
+          assets {
             title
-            file {
-              url
+            url
+            type
+            media {
+              file {
+                url
+              }
             }
-          }
-          ctas {
-            id
-            cta
-            ctaUrl
           }
         }
       }

@@ -1,6 +1,6 @@
 import React from "react"
 import Container from "react-bootstrap/Container"
-import Button from "react-bootstrap/Button"
+// import Button from "react-bootstrap/Button"
 import { TopNav } from "../components/topNav"
 import { Gallery } from "../components/gallery"
 import { Slideshow } from "../components/slideshow"
@@ -9,28 +9,28 @@ import { RichText } from "../components/richText"
 export default ({
   pageContext: {
     categories,
+    articles,
     projectName,
     description,
-    mediaDisplay = "slideshow",
-    media,
-    ctas,
+    assetDisplay = "slideshow",
+    assets,
   },
 }) => (
   <div>
-    <TopNav data={categories} />
+    <TopNav categoryData={categories} articleData={articles} />
     <Container>
-      {mediaDisplay === "gallery" ? (
-        <Gallery data={media} />
+      {assetDisplay === "gallery" ? (
+        <Gallery data={assets} />
       ) : (
-        <Slideshow data={media} />
+        <Slideshow data={assets} />
       )}
       <RichText text={description} />
-      {ctas &&
+      {/* {ctas &&
         ctas.map(({ id, cta, ctaUrl }) => (
           <Button key={id} variant="primary" href={ctaUrl}>
             {cta}
           </Button>
-        ))}
+        ))} */}
     </Container>
   </div>
 )
@@ -45,6 +45,15 @@ export const query = graphql`
         }
       }
     }
+    allContentfulArticle(filter: { visible: { eq: true } }) {
+      edges {
+        node {
+          id
+          slug
+          title
+        }
+      }
+    }
     allContentfulProject(filter: { visible: { eq: true } }) {
       edges {
         node {
@@ -54,17 +63,16 @@ export const query = graphql`
           description {
             json
           }
-          mediaDisplay
-          media {
+          assetDisplay
+          assets {
             title
-            file {
-              url
+            type
+            url
+            media {
+              file {
+                url
+              }
             }
-          }
-          ctas {
-            id
-            cta
-            ctaUrl
           }
         }
       }

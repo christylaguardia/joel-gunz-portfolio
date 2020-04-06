@@ -54,16 +54,17 @@ exports.createPages = ({ graphql, actions }) => {
             description {
               json
             }
-            media {
-              title
-              file {
-                url
-              }
-            }
-            ctas {
+            assetDisplay
+            assets {
               id
-              cta
-              ctaUrl
+              title
+              type
+              url
+              media {
+                file {
+                  url
+                }
+              }
             }
           }
         }
@@ -92,11 +93,12 @@ exports.createPages = ({ graphql, actions }) => {
         component: path.resolve(`./src/pages/project.js`),
         context: {
           categories: result.data.allContentfulCategory, // for the nav bar
+          articles: result.data.allContentfulArticle, // for the nav bar
           id: node.id,
           projectName: node.projectName,
           description: node.description,
-          media: node.media,
-          ctas: node.ctas,
+          assetDisplay: node.assetDisplay,
+          assets: node.assets,
         },
       })
     })
