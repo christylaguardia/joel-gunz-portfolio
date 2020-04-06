@@ -17,7 +17,5 @@ export const TopNav = ({ categoryData, articleData }) => (
           {node.title}
         </Nav.Link>
       ))}
-    <Nav.Link href="/">About</Nav.Link>
-    <Nav.Link href="/">Contact</Nav.Link>
   </Navbar>
 )
