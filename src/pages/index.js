@@ -1,21 +1,63 @@
 import React from "react"
-import { Link } from "gatsby"
+import { TopNav } from "../components/topNav"
+import { Projects } from "../components/projects"
+import "./index.css"
 
-import Layout from "../components/layout"
-import Image from "../components/image"
-import SEO from "../components/seo"
+// TODO: SEO
+// import SEO from "../components/seo"
+// <SEO title="Home" />
 
-const IndexPage = () => (
-  <Layout>
-    <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div>
-    <Link to="/page-2/">Go to page 2</Link>
-  </Layout>
+const IndexPage = ({ data }) => (
+  <div className="base">
+    <TopNav
+      categoryData={data.allContentfulCategory}
+      articleData={data.allContentfulArticle}
+    />
+    <Projects data={data.allContentfulProject} />
+  </div>
 )
+
+// Can return only the first image?
+export const query = graphql`
+  {
+    allContentfulCategory {
+      edges {
+        node {
+          id
+          category
+        }
+      }
+    }
+    allContentfulArticle(filter: { visible: { eq: true } }) {
+      edges {
+        node {
+          id
+          slug
+          title
+        }
+      }
+    }
+    allContentfulProject(filter: { visible: { eq: true } }) {
+      edges {
+        node {
+          id
+          projectName
+          slug
+          media {
+            title
+            file {
+              url
+            }
+          }
+          ctas {
+            id
+            cta
+            ctaUrl
+          }
+        }
+      }
+    }
+  }
+`
 
 export default IndexPage
