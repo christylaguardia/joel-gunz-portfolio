@@ -19,11 +19,8 @@ export default ({
   <div>
     <TopNav categoryData={categories} articleData={articles} />
     <Container>
-      {assetDisplay === "gallery" ? (
-        <Gallery data={assets} />
-      ) : (
-        <Slideshow data={assets} />
-      )}
+      {assetDisplay !== "gallery" && <Slideshow data={assets} />}
+      {/* <Gallery data={assets} /> */}
       <RichText text={description} />
       {/* {ctas &&
         ctas.map(({ id, cta, ctaUrl }) => (
