@@ -27,3 +27,7 @@ npm run develop
 Your site is now running at [http:localhost:8000](http:localhost:8000).
 
 You can run queries at [http://localhost:8000/\_\_\_graphql](http://localhost:8000/___graphql).
+
+## References
+
+- [Using Rich Text with Gatsby](https://www.contentful.com/developers/docs/tutorials/general/rich-text-and-gatsby/)

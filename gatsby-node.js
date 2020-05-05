@@ -76,6 +76,7 @@ exports.createPages = ({ graphql, actions }) => {
   `).then(results => {
     // Create article pages
     results.data.allContentfulArticle.edges.forEach(({ node }) => {
+      console.log("created page for article: ", node.slug)
       createPage({
         path: `/${node.slug}`,
         component: path.resolve(`./src/pages/article.js`),
@@ -91,6 +92,7 @@ exports.createPages = ({ graphql, actions }) => {
     })
     // Create project pages
     results.data.allContentfulProject.edges.forEach(({ node }) => {
+      console.log("created page for project: ", node.slug)
       createPage({
         path: `/${node.slug}`,
         component: path.resolve(`./src/pages/project.js`),

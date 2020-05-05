@@ -4,14 +4,20 @@ import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
 
 const Bold = ({ children }) => <span className="bold">{children}</span>
 const Text = ({ children }) => <p className="align-center">{children}</p>
+// const Image = ({ children }) => <img className="align-center" src={} />
 
 const options = {
   renderMark: {
-    [MARKS.BOLD]: text => <Bold>{text}</Bold>,
+    [MARKS.BOLD]: text => <span className="bold">{text}</span>,
   },
   renderNode: {
-    [BLOCKS.PARAGRAPH]: (node, children) => <Text>{children}</Text>,
+    [BLOCKS.PARAGRAPH]: (node, children) => (
+      <p className="align-center">{children}</p>
+    ),
   },
+  renderImage: {
+    []
+  }
 }
 
 export const RichText = ({ text }) =>
